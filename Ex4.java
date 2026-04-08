@@ -1,0 +1,25 @@
+package Lista_3;
+
+import java.util.Scanner;
+
+public class Ex4 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int idade;
+        System.out.println("Digite a sua idade: ");
+        idade = scan.nextInt();
+        if (idade >= 18);{
+            System.out.println("Maior de idade.");
+        }
+        
+
+
+
+
+
+
+
+
+
+    }
+}
