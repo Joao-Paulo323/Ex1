@@ -13,26 +13,19 @@ public class Ex12 {
         v2 = scan.nextInt();
         v3 = scan.nextInt();
         scan.close();
-
-        if (v1 > v2) {
-            if (v1 > v3) {
-                if (v2 > v3) {
-                    System.out.println("O maior numero é o " + v1 + " e o menor numero é o " + v3);
-                } else {
-                    System.out.println("O maior numero é o " + v1 + " e o menor numero é o " + v2);
-                }
-            } else {
-                System.out.println("O maior numero é o " + v3 + " e o menor numero é o " + v2);
-
-            }
+        if (v1 > v2 && v1 > v3) {
+            System.out.println("O maior numero é o " + v1);
         } else if (v2 > v3) {
-            if (v1 > v3) {
-                System.out.println("O maior numero é o " + v2 + " e o menor numero é o " + v3);
-            } else {
-                System.out.println("O maior numero é o " + v2 + " e o menor numero é o " + v1);
-            }
+            System.out.println("O maior numero é o " + v2);
         } else {
-            System.out.println("O maior numero é o " + v3 + " e o menor numero é o " + v1);
+            System.out.println("O maior numero é o " + v3);
+        }
+        if (v1 < v2 && v1 < v3) {
+            System.out.println("O menor numero é o " + v1);
+        } else if (v2 < v3 && v2 < v1) {
+            System.out.println("O menor numero é o " + v2);
+        } else {
+            System.out.println("O menor numero é o " + v3);
         }
     }
 }
