@@ -1,0 +1,29 @@
+package Lista_3;
+
+import java.util.Scanner;
+
+public class Ex13 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double ano, conta, conta2;
+        System.out.println("Digite um ano abaixo e informaremos se ele e bissexto ou não");
+        ano = scan.nextDouble();
+        scan.close();
+        if (ano < 0) {
+            System.out.println("Por favor digite um ano valido");
+        } else {
+            conta = ano % 4;
+            if (conta == 0) {
+                conta2 = ano % 100;
+                if (conta2 != 0) {
+                    System.out.println("Seu ano e bissexto");
+                } else {
+                    System.out.println("Seu ano não e bissexto");
+                }
+            } else {
+                System.out.println("Seu ano não e bissexto");
+            }
+        }
+
+    }
+}
