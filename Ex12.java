@@ -22,7 +22,7 @@ public class Ex12 {
         }
         if (v1 < v2 && v1 < v3) {
             System.out.println("O menor numero é o " + v1);
-        } else if (v2 < v3 && v2 < v1) {
+        } else if (v2 < v3) {
             System.out.println("O menor numero é o " + v2);
         } else {
             System.out.println("O menor numero é o " + v3);
